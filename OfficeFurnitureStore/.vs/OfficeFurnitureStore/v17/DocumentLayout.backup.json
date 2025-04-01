@@ -1,0 +1,529 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\partnerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\partnerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\shared\\_preloader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\shared\\_preloader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\models\u200B\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:models\u200B\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\areas\\adminstore\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:areas\\adminstore\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\models\u200B\\officefurniturestorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:models\u200B\\officefurniturestorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|e:\\datn\\productluxmanagement\\officefurniturestore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B5D2B59-4D13-4C74-8E8B-9B221B76A327}|OfficeFurnitureStore.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 562,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\StatisticsController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:23:42.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\ProductsController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:22:56.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PartnersController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\PartnersController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\PartnersController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\PartnersController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\PartnersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:19:27.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDetailsController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\OrderDetailsController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\OrderDetailsController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\OrderDetailsController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\OrderDetailsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:18:44.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\OrdersController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:18:08.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\CustomersController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:17:28.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactsController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\ContactsController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\ContactsController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\ContactsController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\ContactsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:16:48.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\CommentsController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:16:02.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\CategoriesController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:15:24.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminsController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\AdminsController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\AdminsController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\AdminsController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\AdminsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:14:44.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-01T09:13:25.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\Login\\Index.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:11:19.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:10:48.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Login.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Models\\Login.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Models\\Login.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:10:21.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\LoginController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:09:54.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\DashboardController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:08:58.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Controllers\\BaseController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Areas\\AdminStore\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:08:05.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_NavBar.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\Shared\\_NavBar.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\Shared\\_NavBar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:07:14.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Preloader.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\_Preloader.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\Shared\\_Preloader.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\_Preloader.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\Shared\\_Preloader.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:07:04.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_SideBar.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\Shared\\_SideBar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:06:59.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:06:57.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\Shared\\Admin.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\Shared\\Admin.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\Shared\\Admin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:06:49.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:06:41.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\AdminStore\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Areas\\AdminStore\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\AdminStore\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T09:06:26.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Models\u200B\\Admin.cs",
+              "RelativeDocumentMoniker": "Models\u200B\\Admin.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Models\u200B\\Admin.cs",
+              "RelativeToolTip": "Models\u200B\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:05:26.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-01T09:02:55.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "OfficeFurnitureStoreContext.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Models\u200B\\OfficeFurnitureStoreContext.cs",
+              "RelativeDocumentMoniker": "Models\u200B\\OfficeFurnitureStoreContext.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Models\u200B\\OfficeFurnitureStoreContext.cs",
+              "RelativeToolTip": "Models\u200B\\OfficeFurnitureStoreContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:53:45.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:52:51.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:52:45.127Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
