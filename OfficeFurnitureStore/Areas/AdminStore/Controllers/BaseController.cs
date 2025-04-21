@@ -11,7 +11,7 @@ namespace OfficeFurnitureStore.Areas.AdminStore.Controllers
                 if (context.HttpContext.Session.GetString("AdminLogin") == null)
                 {
                     context.Result = new RedirectToRouteResult(
-                        new RouteValueDictionary(new { Controller = "Login", Action = "Index", Areas = "AdminManagement" }));
+                        new RouteValueDictionary(new { Controller = "Login", Action = "Index", Areas = "AdminStore" }));
                 }
                 base.OnActionExecuted(context);
             }

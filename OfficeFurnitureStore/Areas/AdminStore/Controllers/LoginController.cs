@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using OfficeFurnitureStore.Areas.AdminStore.Models;
 using OfficeFurnitureStore.Models;
 
-namespace OfficeFurnitureStore.Areas.AdminManagement.Controllers
+namespace OfficeFurnitureStore.Areas.AdminStore.Controllers
 {
-    [Area("AdminManagement")]
+    [Area("AdminStore")]
     public class LoginController : Controller
     {
         public OfficeFurnitureStoreContext _context;

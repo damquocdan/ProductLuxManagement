@@ -1,0 +1,403 @@
+﻿@model IEnumerable<OfficeFurnitureStore.Models.Cart>
+
+@{
+    ViewData["Title"] = "Giỏ Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Custom CSS -->
+<style>
+    :root {
+        --primary-color: #3a3f58;
+        --accent-color: #e45441;
+        --text-color: #ffffff;
+    }
+
+    body {
+        background-color: #f8f9fa;
+        color: var(--primary-color);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .cart-section {
+        background: linear-gradient(rgba(58, 63, 88, 0.8), rgba(58, 63, 88, 0.8)), url('/images/about-img.jpg') no-repeat center center;
+        background-size: cover;
+        color: var(--text-color);
+        padding: 80px 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .cart-section h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        .cart-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+    .cart-card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+        .cart-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .cart-card .card-body {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cart-card .card-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .cart-card .card-text {
+            color: #6c757d;
+            margin-bottom: 5px;
+        }
+
+    .btn-accent {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-accent:hover {
+            background-color: #c43c2f;
+            border-color: #c43c2f;
+        }
+
+    .btn-outline-accent {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+
+        .btn-outline-accent:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+    .quantity-input {
+        width: 60px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    /* Custom styling for number input spinner buttons */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .quantity-input-container {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .quantity-btn {
+        width: 24px;
+        height: 24px;
+        background-color: var(--accent-color);
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        margin: 0 5px;
+    }
+
+        .quantity-btn:hover {
+            background-color: #c43c2f;
+        }
+
+    .section-title {
+        color: var(--primary-color);
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .total-section {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: right;
+    }
+
+    .fa-icon {
+        margin-right: 8px;
+    }
+
+    .alert-container {
+        margin-bottom: 20px;
+    }
+
+    @@media (max-width: 768px) {
+        .cart-section h1
+
+    {
+        font-size: 2rem;
+    }
+
+    .cart-section p {
+        font-size: 1rem;
+    }
+
+    .cart-card .card-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-card img {
+        margin-bottom: 10px;
+    }
+
+    .quantity-btn {
+        margin: 0 3px;
+    }
+
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="cart-section">
+    <div class="container">
+        <h1><i class="fas fa-shopping-cart fa-icon"></i> Giỏ Hàng Của Bạn</h1>
+        <p>Xem lại các sản phẩm nội thất văn phòng trong giỏ hàng và tiến hành thanh toán để hoàn tất đơn hàng.</p>
+    </div>
+</section>
+
+<!-- Cart Items Section -->
+<div class="container">
+    <h2 class="section-title"><i class="fas fa-couch fa-icon"></i> Sản Phẩm Trong Giỏ Hàng</h2>
+
+    <div class="alert-container"></div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["Success"]
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["Error"]
+        </div>
+    }
+
+    @if (Model.Any())
+    {
+        <div class="row" id="cart-items">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 cart-item" data-cart-id="@item.CartId">
+                    <div class="cart-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <img src="@(item.Product.Image ?? "/images/g1.jpg")" alt="@item.Product.ProductName" />
+                                <div class="ms-3">
+                                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Product.ProductName)</h5>
+                                    <p class="card-text"><strong>Giá:</strong> @Html.DisplayFor(modelItem => item.Product.Price) VNĐ</p>
+                                    <p class="card-text"><strong>Danh Mục:</strong> @Html.DisplayFor(modelItem => item.Product.Category.CategoryName)</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <form asp-action="UpdateQuantity" method="post" class="d-flex align-items-center quantity-form">
+                                    <input type="hidden" name="CartId" value="@item.CartId" />
+                                    <input type="hidden" name="CustomerId" value="@item.CustomerId" />
+                                    <input type="hidden" name="ProductId" value="@item.ProductId" />
+                                    <div class="quantity-input-container">
+                                        <button type="button" class="quantity-btn quantity-decrement">-</button>
+                                        <input type="number" name="Quantity" value="@item.Quantity" min="1" class="quantity-input" data-cart-id="@item.CartId" data-price="@item.Product.Price" />
+                                        <button type="button" class="quantity-btn quantity-increment">+</button>
+                                    </div>
+                                </form>
+                                <button class="btn btn-outline-accent btn-sm ms-2 delete-btn" data-cart-id="@item.CartId"><i class="fas fa-trash fa-icon"></i> Xóa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Total and Checkout -->
+        <div class="total-section">
+            <h4>
+                <strong>Tổng Cộng:</strong> <span id="cart-total">@Model.Sum(item => item.Quantity * item.Product.Price)</span> VNĐ
+            </h4>
+            <a asp-action="ConfirmAddress" class="btn btn-accent mt-3"><i class="fas fa-check fa-icon"></i> Tiến Hành Thanh Toán</a>
+        </div>
+    }
+    else
+    {
+        <div class="text-center">
+            <p class="text-muted">Giỏ hàng của bạn hiện đang trống. Hãy thêm sản phẩm để tiếp tục mua sắm!</p>
+            <a asp-controller="Products" asp-action="Index" class="btn btn-accent"><i class="fas fa-shopping-bag fa-icon"></i> Tiếp Tục Mua Sắm</a>
+        </div>
+    }
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript for Auto-Update and Auto-Delete -->
+<script>
+    $(document).ready(function () {
+        // Handle quantity input changes
+        $('.quantity-input').on('input', function () {
+            var $input = $(this);
+            var cartId = $input.data('cart-id');
+            var quantity = parseInt($input.val());
+
+            if (isNaN(quantity) || quantity < 1) {
+                $input.val(1);
+                quantity = 1;
+            }
+
+            updateQuantity(cartId, quantity, $input);
+        });
+
+        // Handle increment button
+        $('.quantity-increment').on('click', function () {
+            var $input = $(this).siblings('.quantity-input');
+            var currentValue = parseInt($input.val());
+            $input.val(currentValue + 1);
+            updateQuantity($input.data('cart-id'), currentValue + 1, $input);
+        });
+
+        // Handle decrement button
+        $('.quantity-decrement').on('click', function () {
+            var $input = $(this).siblings('.quantity-input');
+            var currentValue = parseInt($input.val());
+            if (currentValue > 1) {
+                $input.val(currentValue - 1);
+                updateQuantity($input.data('cart-id'), currentValue - 1, $input);
+            }
+        });
+
+        // Function to update quantity via AJAX
+        function updateQuantity(cartId, quantity, $input) {
+            $.ajax({
+                url: '@Url.Action("UpdateQuantity", "Carts")',
+                type: 'POST',
+                data: {
+                    cartId: cartId,
+                    quantity: quantity,
+                    __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                },
+                success: function (response) {
+                    if (response.success) {
+                        $('.alert-container').html('<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+                            response.message +
+                            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+                        // Update total
+                        var price = $input.data('price');
+                        var newTotal = 0;
+                        $('.quantity-input').each(function () {
+                            newTotal += $(this).data('price') * parseInt($(this).val());
+                        });
+                        $('#cart-total').text(newTotal);
+                    } else {
+                        $('.alert-container').html('<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                            response.message +
+                            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+                        $input.val(response.currentQuantity || 1);
+                    }
+                    setTimeout(function () {
+                        $('.alert').fadeOut('slow', function () { $(this).remove(); });
+                    }, 3000);
+                },
+                error: function () {
+                    $('.alert-container').html('<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                        'Đã xảy ra lỗi khi cập nhật số lượng.' +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+                    setTimeout(function () {
+                        $('.alert').fadeOut('slow', function () { $(this).remove(); });
+                    }, 3000);
+                }
+            });
+        }
+
+        // Handle delete button
+        $('.delete-btn').on('click', function () {
+            var $button = $(this);
+            var cartId = $button.data('cart-id');
+
+            $.ajax({
+                url: '@Url.Action("DeleteConfirmed", "Carts")',
+                type: 'POST',
+                data: {
+                    id: cartId,
+                    __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                },
+                success: function () {
+                    $('.alert-container').html('<div class="alert alert-success alert-dismissible fade show" role="alert">' +
+                        'Xóa sản phẩm thành công!' +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+                    // Remove the cart item from DOM
+                    $button.closest('.cart-item').fadeOut('slow', function () {
+                        $(this).remove();
+                        // Update total
+                        var newTotal = 0;
+                        $('.quantity-input').each(function () {
+                            newTotal += $(this).data('price') * parseInt($(this).val());
+                        });
+                        $('#cart-total').text(newTotal);
+                        // Show empty cart message if no items remain
+                        if ($('#cart-items').children().length === 0) {
+                            $('#cart-items').replaceWith('<div class="text-center"><p class="text-muted">Giỏ hàng của bạn hiện đang trống. Hãy thêm sản phẩm để tiếp tục mua sắm!</p><a href="@Url.Action("Index", "Products")" class="btn btn-accent"><i class="fas fa-shopping-bag fa-icon"></i> Tiếp Tục Mua Sắm</a></div>');
+                        }
+                    });
+                    setTimeout(function () {
+                        $('.alert').fadeOut('slow', function () { $(this).remove(); });
+                    }, 3000);
+                },
+                error: function () {
+                    $('.alert-container').html('<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
+                        'Đã xảy ra lỗi khi xóa sản phẩm.' +
+                        '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>');
+                    setTimeout(function () {
+                        $('.alert').fadeOut('slow', function () { $(this).remove(); });
+                    }, 3000);
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,259 @@
+﻿@model OfficeFurnitureStore.Models.Customer
+
+@{
+    ViewData["Title"] = "Chỉnh Sửa Tài Khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Custom CSS -->
+<style>
+    :root {
+        --primary-color: #3a3f58;
+        --accent-color: #e45441;
+        --text-color: #ffffff;
+    }
+
+    body {
+        background-color: #f8f9fa;
+        color: var(--primary-color);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .hero-section {
+        background: linear-gradient(rgba(58, 63, 88, 0.8), rgba(58, 63, 88, 0.8)), url('/images/about-img.jpg') no-repeat center center;
+        background-size: cover;
+        color: var(--text-color);
+        padding: 80px 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .hero-section h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+    .customer-card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+        .customer-card h4 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+    .form-label {
+        font-weight: 600;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+    }
+
+    .form-control {
+        border-radius: 5px;
+    }
+
+    .text-danger {
+        font-size: 0.9rem;
+    }
+
+    .avatar-container {
+        margin-bottom: 20px;
+    }
+
+    .avatar-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid var(--accent-color);
+    }
+
+    .avatar-placeholder {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid var(--accent-color);
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .btn-accent {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-accent:hover {
+            background-color: #c43c2f;
+            border-color: #c43c2f;
+        }
+
+    .btn-outline-accent {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+
+        .btn-outline-accent:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+    .fa-icon {
+        margin-right: 8px;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-note {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-top: 5px;
+    }
+
+    @@media (max-width: 768px) {
+        .hero-section h1
+
+    {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .customer-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .avatar-img,
+    .avatar-placeholder {
+        width: 120px;
+        height: 120px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1><i class="fas fa-user-edit fa-icon"></i> Chỉnh Sửa Tài Khoản Khách Hàng</h1>
+        <p>Cập nhật thông tin tài khoản của bạn để tiếp tục mua sắm các sản phẩm nội thất văn phòng một cách dễ dàng.</p>
+    </div>
+</section>
+
+<!-- Customer Edit Form Section -->
+<div class="container">
+    <div class="customer-card">
+        <div class="avatar-container">
+            @if (!string.IsNullOrEmpty(Model.Avatar))
+            {
+                <img src="@Model.Avatar" alt="Ảnh đại diện" class="avatar-img" />
+            }
+            else
+            {
+                <div class="avatar-placeholder">Không có ảnh</div>
+            }
+        </div>
+        <h4><i class="fas fa-user fa-icon"></i> Chỉnh Sửa Thông Tin</h4>
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <input type="hidden" asp-for="CustomerId" />
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Username" class="form-label"><i class="fas fa-user fa-icon"></i> Tên Đăng Nhập</label>
+                    <input asp-for="Username" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Password" class="form-label"><i class="fas fa-lock fa-icon"></i> Mật Khẩu</label>
+                    <input asp-for="Password" class="form-control" type="password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="FullName" class="form-label"><i class="fas fa-id-card fa-icon"></i> Họ Và Tên</label>
+                    <input asp-for="FullName" class="form-control" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Email" class="form-label"><i class="fas fa-envelope fa-icon"></i> Email</label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Phone" class="form-label"><i class="fas fa-phone fa-icon"></i> Số Điện Thoại</label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="Address" class="form-label"><i class="fas fa-map-marker-alt fa-icon"></i> Địa Chỉ</label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="AvatarFile" class="form-label"><i class="fas fa-image fa-icon"></i> Ảnh Đại Diện</label>
+                    <input type="file" name="AvatarFile" class="form-control" accept="image/*" />
+                    <div class="form-note">Để nguyên nếu không muốn thay đổi ảnh đại diện.</div>
+                    <span asp-validation-for="Avatar" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="CreatedAt" class="form-label"><i class="fas fa-calendar-alt fa-icon"></i> Ngày Tạo</label>
+                    <input asp-for="CreatedAt" class="form-control" disabled />
+                    <span asp-validation-for="CreatedAt" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button type="submit" class="btn btn-accent"><i class="fas fa-save fa-icon"></i> Lưu</button>
+                <a asp-action="Details" asp-route-id="@Model?.CustomerId" class="btn btn-outline-accent"><i class="fas fa-times fa-icon"></i> Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

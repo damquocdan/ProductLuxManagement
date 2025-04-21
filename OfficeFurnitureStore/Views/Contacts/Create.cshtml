@@ -1,0 +1,169 @@
+﻿@model OfficeFurnitureStore.Models.Contact
+
+@{
+    ViewData["Title"] = "Liên Hệ Tư Vấn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Custom CSS -->
+<style>
+    :root {
+        --primary-color: #3a3f58;
+        --accent-color: #e45441;
+        --text-color: #ffffff;
+    }
+
+    .contact-section {
+        background: linear-gradient(rgba(58, 63, 88, 0.8), rgba(58, 63, 88, 0.8)), url('/images/about-img.jpg') no-repeat center center;
+        background-size: cover;
+        color: var(--text-color);
+        padding: 60px 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .contact-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .contact-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+    .form-container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+
+    .form-group label {
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+        .form-group label .fa-icon {
+            color: var(--accent-color);
+            margin-right: 8px;
+        }
+
+    .form-control {
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 5px rgba(228, 84, 65, 0.3);
+        }
+
+    .text-danger {
+        font-size: 0.9rem;
+    }
+
+    .btn-accent {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--text-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-accent:hover {
+            background-color: #c43c2f;
+            border-color: #c43c2f;
+        }
+
+    .back-link {
+        color: var(--accent-color);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+    .fa-icon {
+        margin-right: 8px;
+    }
+
+    @@media (max-width: 768px) {
+        .contact-section h1
+
+    {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="contact-section">
+    <div class="container">
+        <h1>Liên Hệ Tư Vấn</h1>
+        <p>Liên hệ với chúng tôi để được tư vấn về các giải pháp nội thất văn phòng hiện đại, phù hợp với nhu cầu của bạn.</p>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-container">
+                <h4><i class="fas fa-envelope fa-icon"></i> Gửi Yêu Cầu Tư Vấn</h4>
+                <hr />
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Email" class="control-label"><i class="fas fa-at fa-icon"></i> Email</label>
+                        <input asp-for="Email" class="form-control" placeholder="Nhập địa chỉ email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Phone" class="control-label"><i class="fas fa-phone fa-icon"></i> Số Điện Thoại</label>
+                        <input asp-for="Phone" class="form-control" placeholder="Nhập số điện thoại" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Subject" class="control-label"><i class="fas fa-file-alt fa-icon"></i> Chủ Đề</label>
+                        <input asp-for="Subject" class="form-control" placeholder="Nhập chủ đề liên hệ" />
+                        <span asp-validation-for="Subject" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Message" class="control-label"><i class="fas fa-comment fa-icon"></i> Tin Nhắn</label>
+                        <textarea asp-for="Message" class="form-control" rows="5" placeholder="Nhập nội dung tin nhắn"></textarea>
+                        <span asp-validation-for="Message" class="text-danger"></span>
+                    </div>
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                        <input type="submit" value="Gửi Liên Hệ" class="btn btn-accent" />
+                        <a asp-action="Index" class="back-link"><i class="fas fa-arrow-left fa-icon"></i> Quay Lại Danh Sách</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

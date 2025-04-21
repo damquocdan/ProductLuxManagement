@@ -5,8 +5,44 @@
       "PackagePath": "staticwebassets\\OfficeFurnitureStore.eas5r7mns8.bundle.scp.css"
     },
     {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\ekko-lightbox.css",
+      "PackagePath": "staticwebassets\\css\\ekko-lightbox.css"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
       "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\slick-theme.css",
+      "PackagePath": "staticwebassets\\css\\slick-theme.css"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\slick.css",
+      "PackagePath": "staticwebassets\\css\\slick.css"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\css\\style.scss",
+      "PackagePath": "staticwebassets\\css\\style.scss"
     },
     {
       "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\dist\\css\\adminlte.css",
@@ -297,8 +333,108 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\fonts\\octin_sports_rg.ttf",
+      "PackagePath": "staticwebassets\\fonts\\octin_sports_rg.ttf"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\about-img.jpg",
+      "PackagePath": "staticwebassets\\images\\about-img.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\b1.jpg",
+      "PackagePath": "staticwebassets\\images\\b1.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\b2.jpg",
+      "PackagePath": "staticwebassets\\images\\b2.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\b3.jpg",
+      "PackagePath": "staticwebassets\\images\\b3.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\client.jpg",
+      "PackagePath": "staticwebassets\\images\\client.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\g1.jpg",
+      "PackagePath": "staticwebassets\\images\\g1.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\g2.jpg",
+      "PackagePath": "staticwebassets\\images\\g2.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\g3.jpg",
+      "PackagePath": "staticwebassets\\images\\g3.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\g4.jpg",
+      "PackagePath": "staticwebassets\\images\\g4.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\g5.jpg",
+      "PackagePath": "staticwebassets\\images\\g5.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\g6.jpg",
+      "PackagePath": "staticwebassets\\images\\g6.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\s1.jpg",
+      "PackagePath": "staticwebassets\\images\\s1.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\s2.jpg",
+      "PackagePath": "staticwebassets\\images\\s2.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\s3.jpg",
+      "PackagePath": "staticwebassets\\images\\s3.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\slider-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\slider-bg.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\js\\ekko-lightbox.min.js",
+      "PackagePath": "staticwebassets\\js\\ekko-lightbox.min.js"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\js\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.4.1.min.js"
+    },
+    {
       "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\js\\slick.min.js"
     },
     {
       "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\lib\\bootstrap\\LICENSE",

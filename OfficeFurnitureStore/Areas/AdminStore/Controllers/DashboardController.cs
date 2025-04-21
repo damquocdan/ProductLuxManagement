@@ -1,9 +1,9 @@
 ﻿using OfficeFurnitureStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OfficeFurnitureStore.Areas.AdminStore.Controllers;
 
-namespace OfficeFurnitureStore.Areas.AdminManagement.Controllers {
+
+namespace OfficeFurnitureStore.Areas.AdminStore.Controllers {
 
     public class DashboardController : BaseController
     {

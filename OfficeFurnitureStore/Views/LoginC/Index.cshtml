@@ -1,0 +1,201 @@
+﻿@model OfficeFurnitureStore.Models.LoginC
+
+@{
+    ViewData["Title"] = "Đăng Nhập Khách Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Custom CSS -->
+<style>
+    :root {
+        --primary-color: #3a3f58;
+        --accent-color: #e45441;
+        --text-color: #ffffff;
+    }
+
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .login-section {
+        background: linear-gradient(rgba(58, 63, 88, 0.8), rgba(58, 63, 88, 0.8)), url('/images/about-img.jpg') no-repeat center center;
+        background-size: cover;
+        color: var(--text-color);
+        padding: 60px 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .login-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .login-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+    .login-box {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        max-width: 450px;
+        margin: 0 auto 40px;
+    }
+
+    .login-title {
+        color: var(--primary-color);
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+        .login-title .fa-icon {
+            color: var(--accent-color);
+            margin-right: 10px;
+        }
+
+    .form-control {
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+        padding-left: 40px;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 5px rgba(228, 84, 65, 0.3);
+        }
+
+    .input-group-text {
+        background-color: transparent;
+        border: none;
+        color: var(--accent-color);
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .input-wrapper {
+        position: relative;
+    }
+
+    .btn-accent {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--text-color);
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-accent:hover {
+            background-color: #c43c2f;
+            border-color: #c43c2f;
+        }
+
+    .alert-danger {
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .extra-links {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+        .extra-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+            .extra-links a:hover {
+                text-decoration: underline;
+            }
+
+    .fa-icon {
+        margin-right: 8px;
+    }
+
+    @@media (max-width: 768px) {
+        .login-section h1
+
+    {
+        font-size: 2rem;
+    }
+
+    .login-section p {
+        font-size: 1rem;
+    }
+
+    .login-box {
+        padding: 20px;
+    }
+
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="login-section">
+    <div class="container">
+        <h1><i class="fas fa-user fa-icon"></i> Đăng Nhập Khách Hàng</h1>
+        <p>Đăng nhập để khám phá danh mục nội thất văn phòng hiện đại và đặt hàng dễ dàng.</p>
+    </div>
+</section>
+
+<!-- Login Form Section -->
+<div class="container">
+    <div class="login-box">
+        <div class="login-title"><i class="fas fa-sign-in-alt fa-icon"></i> Đăng Nhập</div>
+
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach (var modelState in ViewData.ModelState.Values)
+                    {
+                        foreach (var error in modelState.Errors)
+                        {
+                            <li>@error.ErrorMessage</li>
+                        }
+                    }
+                </ul>
+            </div>
+        }
+
+        <form asp-action="Index" method="post">
+            <!-- Email Input -->
+            <div class="form-group input-wrapper mb-3">
+                <span class="input-group-text"><i class="fas fa-at"></i></span>
+                <input asp-for="Email" type="email" class="custom-input form-control form-control-lg" placeholder="Nhập địa chỉ email" />
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group input-wrapper mb-4">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                <input asp-for="Password" type="password" class="custom-input form-control form-control-lg" placeholder="Nhập mật khẩu" required />
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-accent"><i class="fas fa-sign-in-alt fa-icon"></i> Đăng Nhập</button>
+
+            <!-- Extra Links -->
+            <div class="extra-links">
+                <a href="#"><i class="fas fa-user-plus fa-icon"></i> Đăng Ký Tài Khoản</a> |
+                <a href="#"><i class="fas fa-key fa-icon"></i> Quên Mật Khẩu?</a>
+            </div>
+        </form>
+    </div>
+</div>

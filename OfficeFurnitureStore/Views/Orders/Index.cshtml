@@ -1,0 +1,114 @@
+﻿@model IEnumerable<OfficeFurnitureStore.Models.Order>
+
+@{
+    ViewData["Title"] = "Danh Sách Đơn Hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    body {
+        background-color: #f8f9fa;
+        color: #3a3f58;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container1 {
+        margin:auto;
+        max-width: 1200px;
+        margin-top: 30px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #e45441;
+        font-weight: 600;
+    }
+
+    .icon-title {
+        margin-right: 10px;
+        color: #e45441;
+    }
+
+    .btn-custom {
+        background-color: #e45441;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+        .btn-custom:hover {
+            background-color: #d43f2c;
+        }
+
+    .table {
+        margin-top: 20px;
+    }
+
+        .table th {
+            background-color: #3a3f58;
+            color: #fff;
+            vertical-align: middle;
+        }
+
+        .table td {
+            vertical-align: middle;
+        }
+
+        .table a {
+            color: #e45441;
+            text-decoration: none;
+        }
+
+            .table a:hover {
+                color: #d43f2c;
+                text-decoration: underline;
+            }
+</style>
+
+<div class="container1">
+    <h1><i class="fas fa-list-ul icon-title"></i>Danh Sách Đơn Hàng</h1>
+    <p>
+        <a asp-action="Create" class="btn btn-custom"><i class="fas fa-plus icon-title"></i>Thêm Đơn Hàng Mới</a>
+    </p>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    <i class="fas fa-calendar-alt icon-title"></i>Ngày Đặt Hàng
+                </th>
+                <th>
+                    <i class="fas fa-money-bill-wave icon-title"></i>Tổng Tiền
+                </th>
+                <th>
+                    <i class="fas fa-clipboard-check icon-title"></i>Trạng Thái
+                </th>
+                <th>
+                    <i class="fas fa-cog icon-title"></i>Hành Động
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OrderDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TotalAmount) VNĐ
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.OrderId"><i class="fas fa-info-circle icon-title"></i>Chi Tiết</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

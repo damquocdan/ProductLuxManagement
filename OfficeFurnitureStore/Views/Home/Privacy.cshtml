@@ -1,6 +1,136 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+﻿<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<p>Use this page to detail your site's privacy policy.</p>
+<!-- Custom CSS -->
+<style>
+    :root {
+        --primary-color: #3a3f58;
+        --accent-color: #e45441;
+        --text-color: #ffffff;
+    }
+
+    .about_section {
+        background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/slider-bg.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 60px 0;
+        margin-top: 60px;
+    }
+
+    .section-title {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        animation: fadeIn 1s ease-in-out;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .section-title .fa-icon {
+            color: var(--accent-color);
+            margin-right: 10px;
+        }
+
+    .detail-box h2 {
+        color: var(--primary-color);
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .detail-box p {
+        color: #6c757d;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .img-box img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .img-box img:hover {
+            transform: scale(1.05);
+        }
+
+    .btn-accent {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--text-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-accent:hover {
+            background-color: #c43c2f;
+            border-color: #c43c2f;
+            color: var(--text-color);
+        }
+
+    .fa-icon {
+        margin-right: 8px;
+    }
+
+    @@keyframes fadeIn {
+        0%
+
+    {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    @@media (max-width: 768px) {
+        .section-title
+
+    {
+        font-size: 2rem;
+    }
+
+    .detail-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .detail-box p {
+        font-size: 1rem;
+    }
+
+    }
+</style>
+
+<section class="about_section">
+    <div class="container">
+        <h1 class="section-title">Về Chúng Tôi</h1>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="~/images/about-img.jpg" alt="Ứng Dụng Nội Thất Văn Phòng">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <h2><i class="fas fa-desktop fa-icon"></i> Ứng Dụng Nội Thất Văn Phòng Thông Minh</h2>
+                    <p>
+                        Chúng tôi tự hào là đơn vị tiên phong cung cấp giải pháp nội thất văn phòng hiện đại thông qua ứng dụng quản lý, giới thiệu và bán hàng tối ưu. Ứng dụng của chúng tôi mang đến trải nghiệm mua sắm dễ dàng với danh mục sản phẩm đa dạng, bao gồm bàn làm việc công thái học, ghế văn phòng cao cấp, và các giải pháp lưu trữ thông minh.
+                    </p>
+                    <p>
+                        Tích hợp công nghệ tiên tiến, ứng dụng hỗ trợ khách hàng hình dung không gian làm việc lý tưởng với tính năng thiết kế 3D trực quan. Đồng thời, doanh nghiệp có thể quản lý tồn kho, theo dõi đơn hàng và tối ưu hóa quy trình bán hàng một cách hiệu quả. Chúng tôi cam kết mang đến không gian làm việc tiện nghi, chuyên nghiệp và nâng cao năng suất cho mọi khách hàng.
+                    </p>
+                    <a href="#" class="btn-accent"><i class="fas fa-rocket fa-icon"></i> Khám Phá Ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

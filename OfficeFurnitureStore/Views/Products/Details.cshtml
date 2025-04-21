@@ -1,0 +1,207 @@
+﻿@model OfficeFurnitureStore.Models.Product
+@using System.Linq
+
+@{
+    ViewData["Title"] = "Chi Tiết Sản Phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #3a3f58;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container1 {
+            margin: auto;
+            max-width: 900px;
+            margin-top: 150px;
+            padding: 0 15px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1, h4 {
+            color: #e45441;
+            font-weight: 600;
+        }
+
+        .icon-title {
+            margin-right: 10px;
+            color: #e45441;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: #e45441;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+            .btn-custom:hover {
+                background-color: #d43f2c;
+            }
+
+        .btn-back {
+            background-color: #3a3f58;
+        }
+
+            .btn-back:hover {
+                background-color: #2e3247;
+            }
+
+        .comment-section {
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-box {
+            border: 1px solid #e45441;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f8f9fa;
+        }
+
+        .comment-meta {
+            font-size: 0.9em;
+            color: #3a3f58;
+            margin-bottom: 10px;
+        }
+
+        .form-label {
+            font-weight: 500;
+            color: #3a3f58;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+    </style>
+    <div class="container1">
+        <h1><i class="fas fa-box-open icon-title"></i>Chi Tiết Sản Phẩm</h1>
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="fas fa-check-circle icon-title"></i>@TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="fas fa-exclamation-circle icon-title"></i>@TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        <div class="product-card">
+            <div class="row">
+                <div class="col-md-6">
+                    @if (!string.IsNullOrEmpty(Model.Image))
+                    {
+                        <img src="@Model.Image" alt="@Model.ProductName" class="product-image" />
+                    }
+                    else
+                    {
+                        <div class="text-center">
+                            <i class="fas fa-image fa-5x text-muted"></i>
+                            <p>Không có hình ảnh</p>
+                        </div>
+                    }
+                </div>
+                <div class="col-md-6">
+                    <h4><i class="fas fa-info-circle icon-title"></i>Thông Tin Sản Phẩm</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4"><i class="fas fa-box-open icon-title"></i>Tên Sản Phẩm</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.ProductName)</dd>
+                        <dt class="col-sm-4"><i class="fas fa-align-left icon-title"></i>Mô Tả</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Description)</dd>
+                        <dt class="col-sm-4"><i class="fas fa-money-bill-wave icon-title"></i>Giá</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Price) VNĐ</dd>
+                        <dt class="col-sm-4"><i class="fas fa-warehouse icon-title"></i>Tồn Kho</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.StockQuantity)</dd>
+                        <dt class="col-sm-4"><i class="fas fa-shopping-cart icon-title"></i>Đã Đặt</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.OrderedQuantity)</dd>
+                        <dt class="col-sm-4"><i class="fas fa-clipboard-check icon-title"></i>Trạng Thái</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Status)</dd>
+                        <dt class="col-sm-4"><i class="fas fa-list icon-title"></i>Danh Mục</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Category.CategoryName)</dd>
+                    </dl>
+                    <div class="mt-3">
+                        <a asp-action="Index" class="btn btn-custom btn-back"><i class="fas fa-arrow-left"></i> Quay Lại Danh Sách</a>
+                        @if (Model.Status == "Available" && Model.StockQuantity > 0)
+                        {
+                            <a asp-controller="Carts" asp-action="Add" asp-route-id="@Model.ProductId" class="btn btn-custom"><i class="fas fa-cart-plus"></i> Thêm Vào Giỏ Hàng</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment-section">
+            <h4><i class="fas fa-comment icon-title"></i>Bình Luận và Đánh Giá</h4>
+            <hr />
+        @if (ViewBag.Comments != null && ViewBag.Comments.Count > 0)
+            {
+                @foreach (var comment in ViewBag.Comments)
+                {
+                    <div class="comment-box">
+                        <div class="comment-meta">
+                        <i class="fas fa-user icon-title"></i><strong>@(comment.Customer?.FullName ?? "Khách hàng ẩn danh")</strong>
+                            <span> - <i class="fas fa-clock icon-title"></i>@(comment.CreatedAt?.ToString("dd/MM/yyyy HH:mm") ?? "Không rõ thời gian")</span>
+                        </div>
+                        <p>@(comment.Content ?? "Không có nội dung")</p>
+                    </div>
+                }
+            }
+            else
+            {
+                <p class="text-muted">Chưa có bình luận nào cho sản phẩm này.</p>
+            }
+
+            @if (Context.Session.GetInt32("CustomerId") != null)
+            {
+                <div class="mt-4">
+                    <h5><i class="fas fa-pen icon-title"></i>Viết Bình Luận</h5>
+                    <form asp-controller="Products" asp-action="Comment" method="post">
+                        <input type="hidden" name="ProductId" value="@Model.ProductId" />
+                        <input type="hidden" name="CustomerId" value="@Context.Session.GetInt32("CustomerId")" />
+                        <div class="mb-3">
+                            <label for="Content" class="form-label"><i class="fas fa-comment-dots icon-title"></i>Nội Dung Bình Luận</label>
+                            <textarea class="form-control" id="Content" name="Content" rows="4" required placeholder="Nhập bình luận của bạn..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom"><i class="fas fa-paper-plane"></i> Gửi Bình Luận</button>
+                        @Html.AntiForgeryToken()
+                    </form>
+                </div>
+            }
+            else
+            {
+                <p class="text-muted mt-3">Vui lòng <a asp-controller="LoginC" asp-action="Index" class="text-decoration-underline">đăng nhập</a> để viết bình luận.</p>
+            }
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

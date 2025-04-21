@@ -1,0 +1,227 @@
+﻿@model OfficeFurnitureStore.Models.Customer
+
+@{
+    ViewData["Title"] = "Chi Tiết Tài Khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Custom CSS -->
+<style>
+    :root {
+        --primary-color: #3a3f58;
+        --accent-color: #e45441;
+        --text-color: #ffffff;
+    }
+
+    body {
+        background-color: #f8f9fa;
+        color: var(--primary-color);
+        font-family: 'Arial', sans-serif;
+    }
+
+    .hero-section {
+        background: linear-gradient(rgba(58, 63, 88, 0.8), rgba(58, 63, 88, 0.8)), url('/images/about-img.jpg') no-repeat center center;
+        background-size: cover;
+        color: var(--text-color);
+        padding: 80px 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .hero-section h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+    .customer-card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+        .customer-card h4 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .customer-card dl {
+            margin: 0;
+        }
+
+        .customer-card dt {
+            font-weight: 600;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .customer-card dd {
+            color: #6c757d;
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+    .avatar-container {
+        margin-bottom: 20px;
+    }
+
+    .avatar-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid var(--accent-color);
+    }
+
+    .avatar-placeholder {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid var(--accent-color);
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .btn-accent {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-accent:hover {
+            background-color: #c43c2f;
+            border-color: #c43c2f;
+        }
+
+    .btn-outline-accent {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+
+        .btn-outline-accent:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+    .fa-icon {
+        margin-right: 8px;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @@media (max-width: 768px) {
+        .hero-section h1
+
+    {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .customer-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .customer-card dt,
+    .customer-card dd {
+        font-size: 0.9rem;
+    }
+
+    .avatar-img,
+    .avatar-placeholder {
+        width: 120px;
+        height: 120px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1><i class="fas fa-user-circle fa-icon"></i> Chi Tiết Tài Khoản Khách Hàng</h1>
+        <p>Xem và quản lý thông tin tài khoản của bạn để mua sắm các sản phẩm nội thất văn phòng một cách dễ dàng.</p>
+    </div>
+</section>
+
+<!-- Customer Details Section -->
+<div class="container">
+    <div class="customer-card">
+        <div class="avatar-container">
+            @if (!string.IsNullOrEmpty(Model.Avatar))
+            {
+                <img src="@Model.Avatar" alt="Ảnh đại diện" class="avatar-img" />
+            }
+            else
+            {
+                <div class="avatar-placeholder">Không có ảnh</div>
+            }
+        </div>
+        <h4><i class="fas fa-user fa-icon"></i> Thông Tin Khách Hàng</h4>
+        <dl class="row">
+            <dt class="col-sm-3"><i class="fas fa-user fa-icon"></i> Tên Đăng Nhập</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Username)</dd>
+
+            <dt class="col-sm-3"><i class="fas fa-lock fa-icon"></i> Mật Khẩu</dt>
+            <dd class="col-sm-9">******** (ẩn vì lý do bảo mật)</dd>
+
+            <dt class="col-sm-3"><i class="fas fa-id-card fa-icon"></i> Họ Và Tên</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.FullName)</dd>
+
+            <dt class="col-sm-3"><i class="fas fa-envelope fa-icon"></i> Email</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+            <dt class="col-sm-3"><i class="fas fa-phone fa-icon"></i> Số Điện Thoại</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Phone)</dd>
+
+            <dt class="col-sm-3"><i class="fas fa-map-marker-alt fa-icon"></i> Địa Chỉ</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Address)</dd>
+
+            <dt class="col-sm-3"><i class="fas fa-calendar-alt fa-icon"></i> Ngày Tạo</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.CreatedAt)</dd>
+        </dl>
+    </div>
+
+    <div class="action-buttons">
+        <a asp-action="Edit" asp-route-id="@Model?.CustomerId" class="btn btn-accent"><i class="fas fa-edit fa-icon"></i> Chỉnh Sửa</a>
+        <a asp-controller="Orders" asp-action="Index" asp-route-customerId="@Model?.CustomerId" class="btn btn-outline-accent"><i class="fas fa-shopping-bag fa-icon"></i> Lịch Sử Đơn Hàng</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
