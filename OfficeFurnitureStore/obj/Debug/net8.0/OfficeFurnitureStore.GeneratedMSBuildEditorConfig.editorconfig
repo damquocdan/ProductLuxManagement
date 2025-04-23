@@ -68,10 +68,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDYXRlZ29yaWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Comments/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDb21tZW50c1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Comments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDb21tZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,16 +76,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDb21tZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Comments/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDb21tZW50c1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Comments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDb21tZW50c1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Contacts/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDb250YWN0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Contacts/Delete.cshtml]
@@ -98,10 +86,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Contacts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDb250YWN0c1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Contacts/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xDb250YWN0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Contacts/Index.cshtml]
@@ -156,20 +140,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xPcmRlckRldGFpbHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Orders/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xPcmRlcnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xPcmRlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Orders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xPcmRlcnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Orders/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5TdG9yZVxWaWV3c1xPcmRlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATN/ProductLuxManagement/OfficeFurnitureStore/Areas/AdminStore/Views/Orders/Index.cshtml]

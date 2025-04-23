@@ -1,49 +1,103 @@
 ﻿@model OfficeFurnitureStore.Models.Partner
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi tiết Đối tác";
     Layout = "~/Areas/AdminStore/Views/Shared/Admin.cshtml";
 }
 
-<h1>Details</h1>
+<div class="container-fluid">
+    <h1 class="mb-4 text-primary"><i class="fas fa-building me-2"></i> Chi tiết Đối tác</h1>
 
-<div>
-    <h4>Partner</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PartnerName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PartnerName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ContactPerson)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ContactPerson)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Phone)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Phone)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Address)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Address)
-        </dd>
-    </dl>
+    <hr class="border-primary mb-4" />
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title"><i class="fas fa-id-card me-2"></i> Thông tin Đối tác</h4>
+            <dl class="row mb-0">
+                <dt class="col-sm-3 fw-bold"><i class="fas fa-user-tag me-2"></i> Tên Đối tác</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.PartnerName)</dd>
+
+                <dt class="col-sm-3 fw-bold"><i class="fas fa-user me-2"></i> Người liên hệ</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.ContactPerson)</dd>
+
+                <dt class="col-sm-3 fw-bold"><i class="fas fa-envelope me-2"></i> Email</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+                <dt class="col-sm-3 fw-bold"><i class="fas fa-phone me-2"></i> Số điện thoại</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Phone)</dd>
+
+                <dt class="col-sm-3 fw-bold"><i class="fas fa-map-marker-alt me-2"></i> Địa chỉ</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Address)</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a asp-action="Edit" asp-route-id="@Model?.PartnerId" class="btn btn-warning"><i class="fas fa-edit me-2"></i> Sửa thông tin</a>
+        <a asp-action="Index" class="btn btn-secondary ms-2"><i class="fas fa-arrow-left me-2"></i> Quay lại danh sách</a>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.PartnerId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    .container-fluid {
+        padding: 20px;
+    }
+
+    .text-primary {
+        color: #3a3f58 !important;
+    }
+
+    .border-primary {
+        border-color: #3a3f58 !important;
+        border-width: 2px;
+    }
+
+    .btn-warning {
+        background-color: #f4a261;
+        border-color: #f4a261;
+    }
+
+        .btn-warning:hover {
+            background-color: #e68a41;
+            border-color: #e68a41;
+        }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+    .card {
+        border: none;
+        border-radius: 8px;
+        background-color: #fff;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        color: #3a3f58;
+        margin-bottom: 15px;
+    }
+
+    .row dt, .row dd {
+        padding: 10px 0;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .row dt {
+        color: #3a3f58;
+    }
+
+    .row dd {
+        color: #495057;
+    }
+</style>

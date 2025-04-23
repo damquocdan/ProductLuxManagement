@@ -1,29 +1,29 @@
-﻿﻿﻿﻿@using Microsoft.AspNetCore.Http;
+﻿@using Microsoft.AspNetCore.Http;
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
-<aside class="main-sidebar sidebar-custom elevation-4 position-fixed">
+<aside class="main-sidebar sidebar-dark-primary elevation-4 position-fixed" style="background-color: #3a3f58;">
     <!-- Brand Logo -->
-    <a href="/adminmanagement/dashboard" class="brand-link" style="background-color: #ed3d34; color: white;">
-        <img src="~/images/Logo.png" alt="Logo Hunre" width="75px">
-        <span class="brand-text font-weight-light ms-2">Quản lý</span>
+    <a href="/adminmanagement/dashboard" class="brand-link d-flex align-items-center" style="background-color: #e45441; color: white;">
+        <img src="~/images/Logo.png" alt="Logo Nội Thất" width="60px" class="me-2">
+        <span class="brand-text font-weight-light">Quản Lý Nội Thất</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar user panel -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex position-fixed bottom-0" style="border-top: 1px solid #f7b1ae;">
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex border-top" style="border-color: #e45441;">
             <div class="image">
-                <img src="~/images/Logo.png" class="img-circle elevation-2" alt="Logo">
+                <img src="~/images/" class="img-circle elevation-2" alt="Logo">
             </div>
             <div class="info">
                 @{
                     if (HttpContextAccessor.HttpContext.Session.GetString("AdminLogin") != null)
                     {
-                        <a href="#" class="d-block">@HttpContextAccessor.HttpContext.Session.GetString("AdminLogin")</a>
-                        <a asp-action="Logout" asp-controller="Login" class="logout-link">Đăng xuất</a>
+                        <a href="#" class="d-block text-white">@HttpContextAccessor.HttpContext.Session.GetString("AdminLogin")</a>
+                        <a asp-action="Logout" asp-controller="Login" class="logout-link text-danger">Đăng xuất</a>
                     }
                     else
                     {
-                        <a href="#" class="d-block">Admin</a>
+                        <a href="#" class="d-block text-white">Quản trị viên</a>
                     }
                 }
             </div>
@@ -32,95 +32,94 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <!-- Menu Item Template -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link text-white">
                         <div class="d-flex align-items-center">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-user-tie fa-xl"></i>
+                            <div class="icon-container me-2">
+                                <i class="fas fa-user-cog fa-lg" style="color: #e45441;"></i>
                             </div>
-                            <p class="ms-3">
-                                Tài khoản Admin
+                            <p>
+                                Quản lý tài khoản Admin
                                 <i class="right fas fa-angle-down"></i>
                             </p>
                         </div>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a asp-controller="Admins" asp-action="Index" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Danh sách</p>
+                            <a asp-controller="Admins" asp-action="Index" class="nav-link text-white">
+                                <i class="fas fa-list nav-icon" style="color: #e45441;"></i>
+                                <p>Danh sách tài khoản</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-controller="Admins" asp-action="Create" class="nav-link">
-                                <i class="fas fa-plus-circle nav-icon"></i>
-                                <p>Thêm</p>
+                            <a asp-controller="Admins" asp-action="Create" class="nav-link text-white">
+                                <i class="fas fa-plus-circle nav-icon" style="color: #e45441;"></i>
+                                <p>Thêm tài khoản</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link text-white">
                         <div class="d-flex align-items-center">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-user-tie fa-xl"></i>
+                            <div class="icon-container me-2">
+                                <i class="fas fa-users fa-lg" style="color: #e45441;"></i>
                             </div>
-                            <p class="ms-3">
-                                Tài khoản khách hàng
+                            <p>
+                                Quản lý khách hàng
                                 <i class="right fas fa-angle-down"></i>
                             </p>
                         </div>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a asp-controller="Customers" asp-action="Index" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Danh sách</p>
+                            <a asp-controller="Customers" asp-action="Index" class="nav-link text-white">
+                                <i class="fas fa-list nav-icon" style="color: #e45441;"></i>
+                                <p>Danh sách khách hàng</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-controller="Customers" asp-action="Create" class="nav-link">
-                                <i class="fas fa-plus-circle nav-icon"></i>
-                                <p>Thêm</p>
+                            <a asp-controller="Customers" asp-action="Create" class="nav-link text-white">
+                                <i class="fas fa-plus-circle nav-icon" style="color: #e45441;"></i>
+                                <p>Thêm khách hàng</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link text-white">
                         <div class="d-flex align-items-center">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-user-tie fa-xl"></i>
+                            <div class="icon-container me-2">
+                                <i class="fas fa-th-large fa-lg" style="color: #e45441;"></i>
                             </div>
-                            <p class="ms-3">
-                                Quản lý danh mục
+                            <p>
+                                Quản lý danh mục nội thất
                                 <i class="right fas fa-angle-down"></i>
                             </p>
                         </div>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a asp-controller="Categories" asp-action="Index" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Danh sách</p>
+                            <a asp-controller="Categories" asp-action="Index" class="nav-link text-white">
+                                <i class="fas fa-list nav-icon" style="color: #e45441;"></i>
+                                <p>Danh sách danh mục</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-controller="Categories" asp-action="Create" class="nav-link">
-                                <i class="fas fa-plus-circle nav-icon"></i>
-                                <p>Thêm</p>
+                            <a asp-controller="Categories" asp-action="Create" class="nav-link text-white">
+                                <i class="fas fa-plus-circle nav-icon" style="color: #e45441;"></i>
+                                <p>Thêm danh mục</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link text-white">
                         <div class="d-flex align-items-center">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-user-tie fa-xl"></i>
+                            <div class="icon-container me-2">
+                                <i class="fas fa-envelope fa-lg" style="color: #e45441;"></i>
                             </div>
-                            <p class="ms-3">
+                            <p>
                                 Quản lý liên hệ
                                 <i class="right fas fa-angle-down"></i>
                             </p>
@@ -128,26 +127,26 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a asp-controller="Contacts" asp-action="Index" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Danh sách</p>
+                            <a asp-controller="Contacts" asp-action="Index" class="nav-link text-white">
+                                <i class="fas fa-list nav-icon" style="color: #e45441;"></i>
+                                <p>Danh sách liên hệ</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-controller="Contacts" asp-action="Create" class="nav-link">
-                                <i class="fas fa-plus-circle nav-icon"></i>
-                                <p>Thêm</p>
+                            <a asp-controller="Contacts" asp-action="Create" class="nav-link text-white">
+                                <i class="fas fa-plus-circle nav-icon" style="color: #e45441;"></i>
+                                <p>Thêm liên hệ</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link text-white">
                         <div class="d-flex align-items-center">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-user-tie fa-xl"></i>
+                            <div class="icon-container me-2">
+                                <i class="fas fa-comments fa-lg" style="color: #e45441;"></i>
                             </div>
-                            <p class="ms-3">
+                            <p>
                                 Quản lý bình luận
                                 <i class="right fas fa-angle-down"></i>
                             </p>
@@ -155,53 +154,53 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a asp-controller="Comments" asp-action="Index" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Danh sách</p>
+                            <a asp-controller="Comments" asp-action="Index" class="nav-link text-white">
+                                <i class="fas fa-list nav-icon" style="color: #e45441;"></i>
+                                <p>Danh sách bình luận</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-controller="Comments" asp-action="Create" class="nav-link">
-                                <i class="fas fa-plus-circle nav-icon"></i>
-                                <p>Thêm</p>
+                            <a asp-controller="Comments" asp-action="Create" class="nav-link text-white">
+                                <i class="fas fa-plus-circle nav-icon" style="color: #e45441;"></i>
+                                <p>Thêm bình luận</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link text-white">
                         <div class="d-flex align-items-center">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-user-tie fa-xl"></i>
+                            <div class="icon-container me-2">
+                                <i class="fas fa-couch fa-lg" style="color: #e45441;"></i>
                             </div>
-                            <p class="ms-3">
-                                Quản lý sản phẩm
+                            <p>
+                                Quản lý sản phẩm nội thất
                                 <i class="right fas fa-angle-down"></i>
                             </p>
                         </div>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a asp-controller="Products" asp-action="Index" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Danh sách</p>
+                            <a asp-controller="Products" asp-action="Index" class="nav-link text-white">
+                                <i class="fas fa-list nav-icon" style="color: #e45441;"></i>
+                                <p>Danh sách sản phẩm</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-controller="Products" asp-action="Create" class="nav-link">
-                                <i class="fas fa-plus-circle nav-icon"></i>
-                                <p>Thêm</p>
+                            <a asp-controller="Products" asp-action="Create" class="nav-link text-white">
+                                <i class="fas fa-plus-circle nav-icon" style="color: #e45441;"></i>
+                                <p>Thêm sản phẩm</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link text-white">
                         <div class="d-flex align-items-center">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-user-tie fa-xl"></i>
+                            <div class="icon-container me-2">
+                                <i class="fas fa-handshake fa-lg" style="color: #e45441;"></i>
                             </div>
-                            <p class="ms-3">
+                            <p>
                                 Quản lý đối tác
                                 <i class="right fas fa-angle-down"></i>
                             </p>
@@ -209,26 +208,26 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a asp-controller="Partners" asp-action="Index" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Danh sách</p>
+                            <a asp-controller="Partners" asp-action="Index" class="nav-link text-white">
+                                <i class="fas fa-list nav-icon" style="color: #e45441;"></i>
+                                <p>Danh sách đối tác</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a asp-controller="Partners" asp-action="Create" class="nav-link">
-                                <i class="fas fa-plus-circle nav-icon"></i>
-                                <p>Thêm</p>
+                            <a asp-controller="Partners" asp-action="Create" class="nav-link text-white">
+                                <i class="fas fa-plus-circle nav-icon" style="color: #e45441;"></i>
+                                <p>Thêm đối tác</p>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link text-white">
                         <div class="d-flex align-items-center">
-                            <div class="icon-container">
-                                <i class="fa-solid fa-user-tie fa-xl"></i>
+                            <div class="icon-container me-2">
+                                <i class="fas fa-shopping-cart fa-lg" style="color: #e45441;"></i>
                             </div>
-                            <p class="ms-3">
+                            <p>
                                 Quản lý đơn hàng
                                 <i class="right fas fa-angle-down"></i>
                             </p>
@@ -236,15 +235,9 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a asp-controller="Orders" asp-action="Index" class="nav-link">
-                                <i class="fas fa-edit nav-icon"></i>
-                                <p>Danh sách</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-controller="Orders" asp-action="Create" class="nav-link">
-                                <i class="fas fa-plus-circle nav-icon"></i>
-                                <p>Thêm</p>
+                            <a asp-controller="Orders" asp-action="Index" class="nav-link text-white">
+                                <i class="fas fa-list nav-icon" style="color: #e45441;"></i>
+                                <p>Danh sách đơn hàng</p>
                             </a>
                         </li>
                     </ul>
@@ -253,3 +246,48 @@
         </nav>
     </div>
 </aside>
+
+<style>
+    .main-sidebar {
+        background-color: #3a3f58 !important;
+        color: white !important;
+    }
+
+    .brand-link {
+        background-color: #e45441 !important;
+        border-bottom: 1px solid #ffffff33 !important;
+    }
+
+    .nav-link:hover {
+        background-color: #e45441 !important;
+        color: white !important;
+    }
+
+    .nav-treeview .nav-link {
+        padding-left: 2.5rem !important;
+    }
+
+    .icon-container {
+        width: 30px;
+        text-align: center;
+    }
+
+    .user-panel {
+        background-color: #3a3f58 !important;
+        border-top: 1px solid #e45441 !important;
+    }
+
+    .logout-link {
+        color: #e45441 !important;
+        font-size: 0.9rem;
+    }
+
+        .logout-link:hover {
+            color: white !important;
+        }
+
+    .nav-item .nav-link.active {
+        background-color: #e45441 !important;
+        color: white !important;
+    }
+</style>
