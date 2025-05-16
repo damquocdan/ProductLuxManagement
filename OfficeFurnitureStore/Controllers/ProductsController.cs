@@ -19,7 +19,7 @@ namespace OfficeFurnitureStore.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            var officeFurnitureStoreContext = _context.Products.Include(p => p.Category);
+            var officeFurnitureStoreContext = _context.Products.Include(p => p.Category).OrderByDescending(o => o.ProductId);
             return View(await officeFurnitureStoreContext.ToListAsync());
         }
 

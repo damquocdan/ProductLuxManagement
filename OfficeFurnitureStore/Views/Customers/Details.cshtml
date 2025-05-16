@@ -6,7 +6,6 @@
 }
 
 <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- Custom CSS -->
 <style>
@@ -216,7 +215,7 @@
         </dl>
     </div>
 
-    <div class="action-buttons">
+    <div class="action-buttons mb-4">
         <a asp-action="Edit" asp-route-id="@Model?.CustomerId" class="btn btn-accent"><i class="fas fa-edit fa-icon"></i> Chỉnh Sửa</a>
         <a asp-controller="Orders" asp-action="Index" asp-route-customerId="@Model?.CustomerId" class="btn btn-outline-accent"><i class="fas fa-shopping-bag fa-icon"></i> Lịch Sử Đơn Hàng</a>
     </div>

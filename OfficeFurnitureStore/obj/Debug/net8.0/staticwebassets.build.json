@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pxyIXSIPYpZoV+NHGxU6k6IPdZF0kTM5MdD5UXjfW+U=",
+  "Hash": "h1qdrYbNO7fOsToMHq060ge4T2LzuxMnQjikv62lDzc=",
   "Source": "OfficeFurnitureStore",
   "BasePath": "_content/OfficeFurnitureStore",
   "Mode": "Default",
@@ -1886,6 +1886,69 @@
       "OriginalItemSpec": "wwwroot\\images\\about-img.jpg"
     },
     {
+      "Identity": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\8c84501f-c19f-40f2-808a-00436de556cf.jpg",
+      "SourceId": "OfficeFurnitureStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\",
+      "BasePath": "_content/OfficeFurnitureStore",
+      "RelativePath": "images/avatars/8c84501f-c19f-40f2-808a-00436de556cf#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e6676b71j8",
+      "Integrity": "Bp1Od9uEIzZdhZAXRo06w50d4s82gvQx6fccrizJ++o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatars\\8c84501f-c19f-40f2-808a-00436de556cf.jpg"
+    },
+    {
+      "Identity": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg",
+      "SourceId": "OfficeFurnitureStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\",
+      "BasePath": "_content/OfficeFurnitureStore",
+      "RelativePath": "images/avatars/e3533315-0e44-4852-a7d6-1e177aa5c85b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1n80iazn6k",
+      "Integrity": "vdXkK1kmBsYUjQ4r/slB9wa2f0IBkgBzadOSFU30cOg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatars\\e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg"
+    },
+    {
+      "Identity": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\rosé.jpg",
+      "SourceId": "OfficeFurnitureStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\",
+      "BasePath": "_content/OfficeFurnitureStore",
+      "RelativePath": "images/avatars/rosé#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rxedtypuh9",
+      "Integrity": "IV78uTfFJ4PUXigUwHCmuckl2LsdFGf9yyZ4PCFBRCc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatars\\rosé.jpg"
+    },
+    {
       "Identity": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\b1.jpg",
       "SourceId": "OfficeFurnitureStore",
       "SourceType": "Discovered",
@@ -2117,6 +2180,27 @@
       "OriginalItemSpec": "wwwroot\\images\\g6.jpg"
     },
     {
+      "Identity": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\products\\2222.jpg",
+      "SourceId": "OfficeFurnitureStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\",
+      "BasePath": "_content/OfficeFurnitureStore",
+      "RelativePath": "images/products/2222#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l70jp1j0rv",
+      "Integrity": "0RSuLeucFOtPSYWuKqGdVqoQpSae/+OXVmSdCoUnrQY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\2222.jpg"
+    },
+    {
       "Identity": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\s1.jpg",
       "SourceId": "OfficeFurnitureStore",
       "SourceType": "Discovered",
@@ -2199,6 +2283,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\slider-bg.jpg"
+    },
+    {
+      "Identity": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\user_avatar.png",
+      "SourceId": "OfficeFurnitureStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\",
+      "BasePath": "_content/OfficeFurnitureStore",
+      "RelativePath": "images/user_avatar#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k6s7xvi1x7",
+      "Integrity": "lHgYqf2xMifVRPIvfPxHdRKe0EurjBDkB7jeSz0OYOA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\user_avatar.png"
     },
     {
       "Identity": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\js\\bootstrap.js",
@@ -10660,6 +10765,252 @@
       ]
     },
     {
+      "Route": "images/avatars/8c84501f-c19f-40f2-808a-00436de556cf.e6676b71j8.jpg",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\8c84501f-c19f-40f2-808a-00436de556cf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bp1Od9uEIzZdhZAXRo06w50d4s82gvQx6fccrizJ++o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 07:41:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e6676b71j8"
+        },
+        {
+          "Name": "label",
+          "Value": "images/avatars/8c84501f-c19f-40f2-808a-00436de556cf.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bp1Od9uEIzZdhZAXRo06w50d4s82gvQx6fccrizJ++o="
+        }
+      ]
+    },
+    {
+      "Route": "images/avatars/8c84501f-c19f-40f2-808a-00436de556cf.jpg",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\8c84501f-c19f-40f2-808a-00436de556cf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bp1Od9uEIzZdhZAXRo06w50d4s82gvQx6fccrizJ++o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 07:41:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bp1Od9uEIzZdhZAXRo06w50d4s82gvQx6fccrizJ++o="
+        }
+      ]
+    },
+    {
+      "Route": "images/avatars/e3533315-0e44-4852-a7d6-1e177aa5c85b.1n80iazn6k.jpg",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vdXkK1kmBsYUjQ4r/slB9wa2f0IBkgBzadOSFU30cOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 08:36:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1n80iazn6k"
+        },
+        {
+          "Name": "label",
+          "Value": "images/avatars/e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vdXkK1kmBsYUjQ4r/slB9wa2f0IBkgBzadOSFU30cOg="
+        }
+      ]
+    },
+    {
+      "Route": "images/avatars/e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vdXkK1kmBsYUjQ4r/slB9wa2f0IBkgBzadOSFU30cOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 08:36:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vdXkK1kmBsYUjQ4r/slB9wa2f0IBkgBzadOSFU30cOg="
+        }
+      ]
+    },
+    {
+      "Route": "images/avatars/rosé.jpg",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\rosé.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IV78uTfFJ4PUXigUwHCmuckl2LsdFGf9yyZ4PCFBRCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 08:30:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IV78uTfFJ4PUXigUwHCmuckl2LsdFGf9yyZ4PCFBRCc="
+        }
+      ]
+    },
+    {
+      "Route": "images/avatars/rosé.rxedtypuh9.jpg",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\rosé.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IV78uTfFJ4PUXigUwHCmuckl2LsdFGf9yyZ4PCFBRCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 08:30:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rxedtypuh9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/avatars/rosé.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IV78uTfFJ4PUXigUwHCmuckl2LsdFGf9yyZ4PCFBRCc="
+        }
+      ]
+    },
+    {
       "Route": "images/b1.9gyhzgek4q.jpg",
       "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\b1.jpg",
       "Selectors": [],
@@ -11562,6 +11913,88 @@
       ]
     },
     {
+      "Route": "images/products/2222.jpg",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\products\\2222.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0RSuLeucFOtPSYWuKqGdVqoQpSae/+OXVmSdCoUnrQY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 08:48:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0RSuLeucFOtPSYWuKqGdVqoQpSae/+OXVmSdCoUnrQY="
+        }
+      ]
+    },
+    {
+      "Route": "images/products/2222.l70jp1j0rv.jpg",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\products\\2222.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0RSuLeucFOtPSYWuKqGdVqoQpSae/+OXVmSdCoUnrQY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 08:48:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l70jp1j0rv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/products/2222.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0RSuLeucFOtPSYWuKqGdVqoQpSae/+OXVmSdCoUnrQY="
+        }
+      ]
+    },
+    {
       "Route": "images/s1.ddd8wqwk86.jpg",
       "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\s1.jpg",
       "Selectors": [],
@@ -11886,6 +12319,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-S9pst8XOjS98jVf9frbMRWw79Ydz6MdjL1UPTSaSwew="
+        }
+      ]
+    },
+    {
+      "Route": "images/user_avatar.k6s7xvi1x7.png",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\user_avatar.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lHgYqf2xMifVRPIvfPxHdRKe0EurjBDkB7jeSz0OYOA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 08:16:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k6s7xvi1x7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/user_avatar.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lHgYqf2xMifVRPIvfPxHdRKe0EurjBDkB7jeSz0OYOA="
+        }
+      ]
+    },
+    {
+      "Route": "images/user_avatar.png",
+      "AssetFile": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\user_avatar.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7405"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lHgYqf2xMifVRPIvfPxHdRKe0EurjBDkB7jeSz0OYOA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 08:16:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lHgYqf2xMifVRPIvfPxHdRKe0EurjBDkB7jeSz0OYOA="
         }
       ]
     },

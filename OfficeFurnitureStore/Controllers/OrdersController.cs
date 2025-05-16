@@ -21,9 +21,13 @@ namespace OfficeFurnitureStore.Controllers
         // GET: Orders
         public async Task<IActionResult> Index()
         {
-            var officeFurnitureStoreContext = _context.Orders.Include(o => o.Customer);
-            return View(await officeFurnitureStoreContext.ToListAsync());
+            var orders = _context.Orders
+                .Include(o => o.Customer)
+                .OrderByDescending(o => o.OrderId); // sắp xếp theo ngày tạo mới nhất
+
+            return View(await orders.ToListAsync());
         }
+
 
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)

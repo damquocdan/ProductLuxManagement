@@ -71,9 +71,6 @@
 
 <div class="container1">
     <h1><i class="fas fa-list-ul icon-title"></i>Danh Sách Đơn Hàng</h1>
-    <p>
-        <a asp-action="Create" class="btn btn-custom"><i class="fas fa-plus icon-title"></i>Thêm Đơn Hàng Mới</a>
-    </p>
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
@@ -96,11 +93,12 @@
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.OrderDate)
+                        @item.OrderDate?.ToString("dd/MM/yyyy")
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.TotalAmount) VNĐ
+                        @String.Format("{0:N0} VNĐ", item.TotalAmount)
                     </td>
+
                     <td>
                         @Html.DisplayFor(modelItem => item.Status)
                     </td>

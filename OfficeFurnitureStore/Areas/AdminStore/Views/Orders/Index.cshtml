@@ -21,8 +21,9 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td>@Html.DisplayFor(modelItem => item.OrderDate)</td>
-                        <td>@Html.DisplayFor(modelItem => item.TotalAmount)</td>
+                        <td>@item.OrderDate?.ToString("dd/MM/yyyy")</td>
+                        <td>@($"{item.TotalAmount:N0} ₫")</td>
+
                         <td>@Html.DisplayFor(modelItem => item.Status)</td>
                         <td>@Html.DisplayFor(modelItem => item.Customer.FullName)</td>
                         <td class="text-center">

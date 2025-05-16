@@ -5,9 +5,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 <!-- Custom CSS -->
 <style>
     :root {
@@ -233,7 +230,8 @@
                                 <img src="@(item.Product.Image ?? "/images/g1.jpg")" alt="@item.Product.ProductName" />
                                 <div class="ms-3">
                                     <h5 class="card-title">@Html.DisplayFor(modelItem => item.Product.ProductName)</h5>
-                                    <p class="card-text"><strong>Giá:</strong> @Html.DisplayFor(modelItem => item.Product.Price) VNĐ</p>
+                                    <p class="card-text"><strong>Giá:</strong> @String.Format("{0:N0} VNĐ", item.Product.Price)</p>
+
                                     <p class="card-text"><strong>Danh Mục:</strong> @Html.DisplayFor(modelItem => item.Product.Category.CategoryName)</p>
                                 </div>
                             </div>
@@ -259,7 +257,8 @@
         <!-- Total and Checkout -->
         <div class="total-section">
             <h4>
-                <strong>Tổng Cộng:</strong> <span id="cart-total">@Model.Sum(item => item.Quantity * item.Product.Price)</span> VNĐ
+                <strong>Tổng Cộng:</strong> <span id="cart-total">@String.Format("{0:N0}", Model.Sum(item => item.Quantity * item.Product.Price)) VNĐ</span>
+
             </h4>
             <a asp-action="ConfirmAddress" class="btn btn-accent mt-3"><i class="fas fa-check fa-icon"></i> Tiến Hành Thanh Toán</a>
         </div>

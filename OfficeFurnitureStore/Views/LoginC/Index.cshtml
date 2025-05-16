@@ -4,10 +4,12 @@
     ViewData["Title"] = "Đăng Nhập Khách Hàng";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccessMessage"]
+    </div>
+}
 <!-- Custom CSS -->
 <style>
     :root {
@@ -193,8 +195,7 @@
 
             <!-- Extra Links -->
             <div class="extra-links">
-                <a href="#"><i class="fas fa-user-plus fa-icon"></i> Đăng Ký Tài Khoản</a> |
-                <a href="#"><i class="fas fa-key fa-icon"></i> Quên Mật Khẩu?</a>
+                <a asp-controller="Customers" asp-action="Create"><i class="fas fa-user-plus fa-icon"></i> Đăng Ký Tài Khoản</a>
             </div>
         </form>
     </div>

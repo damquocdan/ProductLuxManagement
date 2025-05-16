@@ -353,6 +353,18 @@
       "PackagePath": "staticwebassets\\images\\about-img.jpg"
     },
     {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\8c84501f-c19f-40f2-808a-00436de556cf.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\8c84501f-c19f-40f2-808a-00436de556cf.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\avatars\\rosé.jpg",
+      "PackagePath": "staticwebassets\\images\\avatars\\rosé.jpg"
+    },
+    {
       "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\b1.jpg",
       "PackagePath": "staticwebassets\\images\\b1.jpg"
     },
@@ -397,6 +409,10 @@
       "PackagePath": "staticwebassets\\images\\g6.jpg"
     },
     {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\products\\2222.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\2222.jpg"
+    },
+    {
       "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\s1.jpg",
       "PackagePath": "staticwebassets\\images\\s1.jpg"
     },
@@ -411,6 +427,10 @@
     {
       "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\slider-bg.jpg",
       "PackagePath": "staticwebassets\\images\\slider-bg.jpg"
+    },
+    {
+      "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\images\\user_avatar.png",
+      "PackagePath": "staticwebassets\\images\\user_avatar.png"
     },
     {
       "Id": "E:\\DATN\\ProductLuxManagement\\OfficeFurnitureStore\\wwwroot\\js\\bootstrap.js",

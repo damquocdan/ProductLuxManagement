@@ -15,10 +15,11 @@
             <h4 class="card-title"><i class="fas fa-info-circle me-2"></i> Thông tin Đơn hàng</h4>
             <dl class="row mb-0">
                 <dt class="col-sm-3 fw-bold"><i class="fas fa-calendar-alt me-2"></i> Ngày đặt hàng</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.OrderDate)</dd>
+                <dd class="col-sm-9">@Model.OrderDate?.ToString("dd/MM/yyyy")</dd>
 
                 <dt class="col-sm-3 fw-bold"><i class="fas fa-dollar-sign me-2"></i> Tổng tiền</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.TotalAmount)</dd>
+                <dd class="col-sm-9">@($"{Model.TotalAmount:N0} ₫")</dd>
+
 
                 <dt class="col-sm-3 fw-bold"><i class="fas fa-clipboard-check me-2"></i> Trạng thái</dt>
                 <dd class="col-sm-9">@Html.DisplayFor(model => model.Status)</dd>
@@ -26,6 +27,41 @@
                 <dt class="col-sm-3 fw-bold"><i class="fas fa-user me-2"></i> Mã khách hàng</dt>
                 <dd class="col-sm-9">@Html.DisplayFor(model => model.Customer.FullName)</dd>
             </dl>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mt-4">
+        <div class="card-body">
+            <h4 class="card-title"><i class="fas fa-list-ul me-2"></i> Chi tiết Đơn hàng</h4>
+            @if (Model.OrderDetails != null && Model.OrderDetails.Any())
+            {
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sản phẩm</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Đơn giá</th>
+                            <th scope="col">Tổng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var detail in Model.OrderDetails)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => detail.Product.ProductName)</td>
+                                <td>@Html.DisplayFor(modelItem => detail.Quantity)</td>
+                                <td>@($"{detail.Price:N0} ₫")</td>
+
+                                <td>@(detail.Quantity * detail.Price)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p class="text-muted">Không có chi tiết đơn hàng nào.</p>
+            }
         </div>
     </div>
 
@@ -72,7 +108,7 @@
 
     .card {
         border: none;
-        border-radius: 8px;
+        border-radius drew: 8px;
         background-color: #fff;
     }
 
@@ -97,4 +133,20 @@
     .row dd {
         color: #495057;
     }
+
+    .table {
+        margin-bottom: 0;
+    }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+        .table th {
+            color: #3a3f58;
+        }
+
+        .table td {
+            color: #495057;
+        }
 </style>

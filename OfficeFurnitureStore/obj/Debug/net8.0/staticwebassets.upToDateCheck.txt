@@ -85,6 +85,9 @@ wwwroot\fonts\fontawesome-webfont.woff
 wwwroot\fonts\fontawesome-webfont.woff2
 wwwroot\fonts\octin_sports_rg.ttf
 wwwroot\images\about-img.jpg
+wwwroot\images\avatars\8c84501f-c19f-40f2-808a-00436de556cf.jpg
+wwwroot\images\avatars\e3533315-0e44-4852-a7d6-1e177aa5c85b.jpg
+wwwroot\images\avatars\rosé.jpg
 wwwroot\images\b1.jpg
 wwwroot\images\b2.jpg
 wwwroot\images\b3.jpg
@@ -96,10 +99,12 @@ wwwroot\images\g3.jpg
 wwwroot\images\g4.jpg
 wwwroot\images\g5.jpg
 wwwroot\images\g6.jpg
+wwwroot\images\products\2222.jpg
 wwwroot\images\s1.jpg
 wwwroot\images\s2.jpg
 wwwroot\images\s3.jpg
 wwwroot\images\slider-bg.jpg
+wwwroot\images\user_avatar.png
 wwwroot\js\bootstrap.js
 wwwroot\js\custom.js
 wwwroot\js\ekko-lightbox.min.js

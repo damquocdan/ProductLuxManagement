@@ -38,7 +38,7 @@ namespace OfficeFurnitureStore.Controllers
             var carts = _context.Carts
                 .Include(c => c.Product)
                 .ThenInclude(p => p.Category)
-                .Where(c => c.CustomerId == customerId);
+                .Where(c => c.CustomerId == customerId).OrderByDescending(o => o.CartId);
             return View(await carts.ToListAsync());
         }
 
@@ -330,7 +330,7 @@ namespace OfficeFurnitureStore.Controllers
                     await transaction.CommitAsync();
 
                     TempData["Success"] = "Đơn hàng đã được đặt thành công.";
-                    return RedirectToAction("Index", "Products");
+                    return RedirectToAction("Index", "Orders");
                 }
             }
             catch (Exception ex)
@@ -361,7 +361,7 @@ namespace OfficeFurnitureStore.Controllers
                 await _context.SaveChangesAsync();
 
                 TempData["Success"] = "Thanh toán MoMo thành công. Đơn hàng đã được đặt.";
-                return RedirectToAction("Index", "Products");
+                return RedirectToAction("Index", "Orders");
             }
             else
             {
@@ -378,8 +378,8 @@ namespace OfficeFurnitureStore.Controllers
             string accessKey = "w9gEg8bjA2AM2Cvr";
             string secretKey = "mD9QAVi4cm9N844jh5Y2tqjWaaJoGVFM";
             string orderInfo = $"Thanh toán đơn hàng #{orderId}";
-            string redirectUrl = "https://localhost:7032/Carts/MoMoCallback";
-            string ipnUrl = "https://localhost:7032/Carts/MoMoCallback";
+            string redirectUrl = "https://localhost:7121/Carts/MoMoCallback";
+            string ipnUrl = "https://localhost:7121/Carts/MoMoCallback";
             string requestId = Guid.NewGuid().ToString();
             string orderIdStr = $"MM{orderId}";
             string amountStr = ((int)amount).ToString();

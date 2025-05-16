@@ -96,13 +96,15 @@
             <h4><i class="fas fa-info-circle icon-title"></i>Thông Tin Đơn Hàng</h4>
             <dl class="row dl-horizontal mt-3">
                 <dt class="col-sm-3"><i class="fas fa-calendar-alt icon-title"></i>Ngày Đặt Hàng</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.OrderDate)</dd>
+            <dd class="col-sm-9">@Model.OrderDate?.ToString("dd/MM/yyyy")</dd>
+
                 <dt class="col-sm-3"><i class="fas fa-money-bill-wave icon-title"></i>Tổng Tiền</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.TotalAmount) VNĐ</dd>
+            <dd class="col-sm-9">@String.Format("{0:N0} VNĐ", Model.TotalAmount)</dd>
+
                 <dt class="col-sm-3"><i class="fas fa-clipboard-check icon-title"></i>Trạng Thái</dt>
                 <dd class="col-sm-9">@Html.DisplayFor(model => model.Status)</dd>
                 <dt class="col-sm-3"><i class="fas fa-user icon-title"></i>Khách Hàng</dt>
-                <dd class="col-sm-9">@Html.DisplayFor(model => model.Customer.CustomerId)</dd>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Customer.FullName)</dd>
             </dl>
         </div>
 
@@ -140,15 +142,17 @@
                                 <td>@(detail.Product?.ProductName ?? "Sản phẩm không xác định")</td>
                             <td>@(detail.Product?.Category?.CategoryName ?? "Không có danh mục")</td>
                                 <td>@Html.DisplayFor(modelItem => detail.Quantity)</td>
-                                <td>@Html.DisplayFor(modelItem => detail.Price) VNĐ</td>
-                                <td>@(detail.Quantity * detail.Price) VNĐ</td>
+                            <td>@String.Format("{0:N0} VNĐ", detail.Price)</td>
+                            <td>@String.Format("{0:N0} VNĐ", detail.Quantity * detail.Price)</td>
+
                             </tr>
                         }
                     </tbody>
                     <tfoot>
                         <tr>
                             <td colspan="6" class="text-end"><strong>Tổng Cộng:</strong></td>
-                            <td><strong>@Model.OrderDetails.Sum(d => d.Quantity * d.Price) VNĐ</strong></td>
+                        <td><strong>@String.Format("{0:N0} VNĐ", Model.OrderDetails.Sum(d => d.Quantity * d.Price))</strong></td>
+
                         </tr>
                     </tfoot>
                 </table>
@@ -160,7 +164,6 @@
         }
 
         <div class="mt-4">
-            <a asp-action="Edit" asp-route-id="@Model?.OrderId" class="btn btn-custom"><i class="fas fa-edit"></i> Chỉnh Sửa</a>
             <a asp-action="Index" class="btn btn-custom btn-back"><i class="fas fa-arrow-left"></i> Quay Lại Danh Sách</a>
         </div>
     </div>

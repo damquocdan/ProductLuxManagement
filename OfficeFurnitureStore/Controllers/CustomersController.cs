@@ -62,11 +62,13 @@ namespace OfficeFurnitureStore.Controllers
             {
                 _context.Add(customer);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                TempData["SuccessMessage"] = "Đăng ký tài khoản thành công!";
+                return RedirectToAction("Index", "LoginC");
             }
             return View(customer);
         }
 
+        // GET: Customers/Edit/5
         // GET: Customers/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -84,11 +86,9 @@ namespace OfficeFurnitureStore.Controllers
         }
 
         // POST: Customers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CustomerId,Username,Password,FullName,Email,Phone,Address,Avatar,CreatedAt")] Customer customer)
+        public async Task<IActionResult> Edit(int id, [Bind("CustomerId,Username,Password,FullName,Email,Phone,Address,Avatar,CreatedAt")] Customer customer, IFormFile? AvatarFile)
         {
             if (id != customer.CustomerId)
             {
@@ -99,6 +99,58 @@ namespace OfficeFurnitureStore.Controllers
             {
                 try
                 {
+                    // Retrieve the existing customer to preserve the old avatar if no new file is uploaded
+                    var existingCustomer = await _context.Customers.AsNoTracking().FirstOrDefaultAsync(c => c.CustomerId == id);
+                    if (existingCustomer == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Handle avatar file upload
+                    if (AvatarFile != null && AvatarFile.Length > 0)
+                    {
+                        // Validate file type (optional, e.g., allow only images)
+                        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
+                        var extension = Path.GetExtension(AvatarFile.FileName).ToLowerInvariant();
+                        if (!allowedExtensions.Contains(extension))
+                        {
+                            ModelState.AddModelError("AvatarFile", "Chỉ chấp nhận file ảnh (jpg, jpeg, png, gif).");
+                            return View(customer);
+                        }
+
+                        // Generate unique file name to avoid conflicts
+                        var fileName = Guid.NewGuid().ToString() + extension;
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/avatars", fileName);
+
+                        // Ensure the directory exists
+                        Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+
+                        // Save the file
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await AvatarFile.CopyToAsync(stream);
+                        }
+
+                        // Update the customer's avatar path
+                        customer.Avatar = "/images/avatars/" + fileName;
+
+                        // Delete the old avatar file if it exists (optional)
+                        if (!string.IsNullOrEmpty(existingCustomer.Avatar))
+                        {
+                            var oldFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", existingCustomer.Avatar.TrimStart('/'));
+                            if (System.IO.File.Exists(oldFilePath))
+                            {
+                                System.IO.File.Delete(oldFilePath);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // No new file uploaded, retain the existing avatar
+                        customer.Avatar = existingCustomer.Avatar;
+                    }
+
+                    // Update the customer in the database
                     _context.Update(customer);
                     await _context.SaveChangesAsync();
                 }
@@ -113,11 +165,11 @@ namespace OfficeFurnitureStore.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Details), new { id = customer.CustomerId });
+
             }
             return View(customer);
         }
-
         // GET: Customers/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

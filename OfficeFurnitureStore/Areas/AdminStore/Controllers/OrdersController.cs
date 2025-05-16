@@ -36,6 +36,8 @@ namespace OfficeFurnitureStore.Areas.AdminStore.Controllers
 
             var order = await _context.Orders
                 .Include(o => o.Customer)
+                .Include(o => o.OrderDetails)
+                    .ThenInclude(od => od.Product)
                 .FirstOrDefaultAsync(m => m.OrderId == id);
             if (order == null)
             {
